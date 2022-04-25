@@ -1,0 +1,59 @@
+.portfolio {
+  max-width: 1490px;
+  width: 100%;
+}
+
+.portfolio__inner {
+  max-height: 630px;
+  overflow: hidden;
+}
+
+.portfolio__title {
+  margin-bottom: 50px;
+
+  position: absolute;
+  right: -80px;
+  bottom: 0;
+
+  transform: rotate(90deg) translateX(-50%);
+}
+
+.portfolio__slider {
+  padding-right: 100px;
+  height: auto;
+}
+
+.portfolio__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+  grid-gap: 40px;
+
+}
+
+// .portfolio__item {}
+
+.portfolio__link {
+  &:focus, &:hover, &:active {
+    .card__img img {
+      transform: scale(0.8);
+    }
+  }
+}
+
+.swiper-vertical > .swiper-scrollbar {
+  top: 0;
+  right: 30px;
+  height: 800px;
+  background-color: white;
+  width: 1px;
+
+}
+
+.swiper-scrollbar-drag {
+  background-color: red;
+
+  border-radius: 100%;
+  width: 30px !important;
+  height: 30px !important;
+  left: -15px;
+}

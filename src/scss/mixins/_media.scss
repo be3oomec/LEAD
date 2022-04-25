@@ -1,0 +1,67 @@
+// ============ МЕДИА ЗАПРОСЫ =========== \\
+@mixin _1200 {
+  @media only screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin _992 {
+  @media only screen and (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin _768 {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin _576 {
+  @media only screen and (max-width: 576px) {
+    @content;
+  }
+}
+
+@mixin _375 {
+  @media only screen and (max-width: 375px) {
+    @content;
+  }
+}
+
+@mixin _320 {
+  @media only screen and (max-width: 320px) {
+    @content;
+  }
+}
+// ============ МЕДИА ЗАПРОСЫ =========== \\
+
+// @mixin _1200m {
+//   @media only screen and (min-width: 1200px) {
+//     @content;
+//   }
+// }
+
+// @mixin _992m {
+//   @media only screen and (min-width: 992px) {
+//     @content;
+//   }
+// }
+
+// @mixin _768m {
+//   @media only screen and (min-width: 768px) {
+//     @content;
+//   }
+// }
+
+// @mixin _576m {
+//   @media only screen and (min-width: 576px) {
+//     @content;
+//   }
+// }
+
+// @mixin _320m {
+//   @media only screen and (min-width: 320px) {
+//     @content;
+//   }
+// }

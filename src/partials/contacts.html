@@ -1,0 +1,103 @@
+<section class="contacts">
+  <div class="container">
+    <div class="contacts__inner">
+
+      <h2 class="contacts__title title">
+        Contacts
+      </h2>
+
+      <form class='contacts__form form' action='#'>
+        <div class="form__top">
+          <h3 class="form__title">Contact us</h3>
+          <p class="form__subtitle">Let’s get to the nex level together</p>
+        </div>
+
+        <div class="form__field">
+          <label class="form__label" for="name">Full name</label>
+          <input class="form__input" type="text" name="name" id="name" placeholder="Enter your first name" required>
+        </div>
+        <div class="form__field">
+          <label class="form__label" for="email">Email</label>
+          <input class='form__input' id='email' type='email' name='email' title='mail@gmail.com'
+            pattern='^([0-9a-zA-Z]([-.]*[0-9a-zA-Z])*@([0-9a-zA-Z][-]*[0-9a-zA-Z])+[a-zA-Z]{2,9})$'
+            placeholder='Enter your email' required>
+        </div>
+        <div class="form__field">
+          <label class="form__label" for="question">How can we help?</label>
+          <textarea class="form__input" name="question" id="question" placeholder="Your massage" required></textarea>
+        </div>
+        <button class='form__button' type='submit'><span>Send</span></button>
+      </form>
+
+      <div class="contacts__block">
+        <a class="contacts__phone" href="tel:16475639114">+1 (647)-563-9114</a>
+        <a class="contacts__mail" href="mailto:lead@gmail.com">lead@gmail.com</a>
+        <address class="contacts__address">Margaretenstraße 70/3, 1050 Vienna, Austria</address>
+
+        <ul class="contacts__block-list">
+          <li class="contacts__item">
+            <a class="contacts__link" href="#">
+              <span>BECOME A CLIENT</span>
+              <span>business@LEAD.com</span>
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="#">
+              <span>BECOME A PARTNER</span>
+              <span>business@LEAD.com</span>
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="#">
+              <span>BECOME A PARTNER</span>
+              <span>business@LEAD.com</span>
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="#">
+              <span>JOIN LEAD TEAM</span>
+              <span>business@LEAD.com</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="contacts__bottom bottom">
+        <div class="contacts__social social">
+          <h4 class="social__heading">
+            Follow us
+          </h4>
+
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg class='social__icon'>
+                  <use xlink:href='./img/sprite.svg#beh'></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg class='social__icon'>
+                  <use xlink:href='./img/sprite.svg#face'></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg class='social__icon'>
+                  <use xlink:href='./img/sprite.svg#inst'></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <span class="contacts__decor scroll">
+          Scroll up
+        </span>
+      </div>
+
+    </div>
+  </div>
+</section>

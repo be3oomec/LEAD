@@ -1,0 +1,11 @@
+.fullpage {
+  flex: 1 0 100%;
+  position: relative;
+}
+
+.fullpage__content {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

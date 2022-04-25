@@ -1,0 +1,34 @@
+// .about {}
+
+// .about__inner {}
+
+.about__title {
+  margin-bottom: 120px;
+}
+
+.about__info {
+  max-width: 1400px;
+  margin-bottom: 70px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.about__text {
+  max-width: 1080px;
+
+  font-family: $montserrat;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.7;
+  letter-spacing: 0.105em;
+}
+
+// .about__link-btn {}
+
+// .about__bottom {}
+
+// .about__social {}
+
+// .about__decor {}

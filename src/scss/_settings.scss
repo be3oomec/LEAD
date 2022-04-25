@@ -1,0 +1,257 @@
+.dis-scroll {
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  overscroll-behavior: none;
+}
+
+.is-hidden {
+  display: none !important;
+  /* stylelint-disable-line declaration-no-important */
+}
+
+.sr-only {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+
+.page--ios .dis-scroll {
+  position: relative;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+.transition-fade {
+  transition: 0.4s;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 250px;
+  min-height: 100%;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.wapper.free .page__pagination {
+  transform: translate(50px, -50%);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.page {
+  flex: 1 1 auto;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.page__wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.page__fullpage {
+  min-height: 100vh;
+  display: flex;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.page__pagination {
+  position: absolute;
+  top: 50%;
+  right: 40px !important;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.page__bullet {
+  width: 8px;
+  height: 8px;
+  cursor: pointer;
+  background-color: $white;
+  margin: 10px 0;
+  border-radius: 100%;
+  transform: scale(1);
+  transition: all 0.3s;
+}
+
+.page__bullet--active {
+  background-color: red;
+  transform: scale(2);
+}
+
+.page__scroll {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4px;
+  height: 100%;
+  background-color: white;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.page__drag-scroll {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: red;
+  cursor: pointer;
+}
+
+// ===========================================
+
+
+.container {
+  margin: 0 auto;
+  padding: 0 35px;
+  // max-width: $container + 30px;
+}
+
+body {
+  font-family: $montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: $white;
+  background-color: $black-900;
+}
+
+.button {
+  font-family: $montserrat;
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 1.1;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $red;
+  border-radius: 2px;
+  border: 1px solid $red;
+  box-shadow: -15px -15px 20px rgba(0, 0, 0, 0.8);
+  max-width: 170px;
+  width: 100%;
+  height: 170px;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: background 0.3s, border 0.3s, box-shadow 0.3s, transform 0.3s  ;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  &:focus,&:hover,&:active {
+    background-color: transparent;
+    border-radius: 2px;
+    border: 1px solid $white;
+    border-radius: 100%;
+    box-shadow: -5px -5px 20px rgba($white, 0.8);
+    transform: scale(1.05);
+  }
+}
+
+.title {
+  font-family: $body;
+  font-weight: 800;
+  font-size: 70px;
+  line-height: 1.1;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.scroll {
+  display: inline-block;
+  font-family: $montserrat;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.3%;
+  color: #FFFFFF;
+  transform: rotate(-90deg);
+  padding-left: 90px;
+
+  position: relative;
+
+  pointer-events: none;
+
+  animation-name: upNDown;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 70px;
+    height: 1px;
+    background-color: #fff;
+  }
+}
+
+
+@keyframes upNDown {
+  0% {
+    transform: translateY(10px) rotate(-90deg);
+  }
+
+  50% {
+    transform: translateY(0) rotate(-90deg);
+  }
+
+  100% {
+    transform: translateY(10px) rotate(-90deg);
+  }
+}
+
+.bottom {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  right: 0;
+}

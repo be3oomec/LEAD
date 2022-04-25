@@ -1,0 +1,38 @@
+// .social {}
+
+.social__heading {
+  font-family: $montserrat;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.1;
+  letter-spacing: 0.105em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 35px;
+}
+
+.social__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+// .social__item {}
+
+.social__link {
+  &:focus,
+  &:hover,
+  &:active {
+    .social__icon {
+      transform: translateY(-5px);
+    }
+  }
+}
+
+.social__icon {
+  width: 44px;
+  height: 44px;
+  fill: $white;
+  transition: all 0.3s;
+}

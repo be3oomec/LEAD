@@ -1,0 +1,24 @@
+// base
+@import "vars";
+@import "reset";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// pages
+// components page
+@import "./components/header";
+@import "./components/hero";
+@import "./components/about";
+@import "./components/reviews";
+@import "./components/services";
+@import "./components/portfolio";
+@import "./components/contacts";
+
+@import "./components/intro";
+@import "./components/fullpage";
+@import "./components/social";
+@import "./components/testimonial";
+@import "./components/card";
+@import "./components/form";
+@import "./components/tabs";

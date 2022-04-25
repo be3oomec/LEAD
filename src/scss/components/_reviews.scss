@@ -1,0 +1,39 @@
+// .reviews {}
+
+.reviews__inner {
+  max-width: 1600px;
+}
+
+.reviews__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+}
+
+// .reviews__title {}
+
+.reviews__company-title {
+  text-align: right;
+  font-weight: 400;
+}
+
+.reviews__company {
+  max-width: 250px;
+}
+
+.reviews__company-icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+  fill: $white
+}
+
+.reviews__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+  grid-gap: 20px;
+  justify-items: center;
+}
+

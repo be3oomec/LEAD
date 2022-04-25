@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+@include('partials/head.html')
+
+<body>
+
+  <div class="wrapper transition-fade" id="swup">
+
+    @include('partials/header.html')
+
+    <main class="page">
+      <div class="page__wrap">
+        <div class="page__fullpage fullpage" style="background-image: url(./img/bg-hero.svg);" data-swiper-parallax="50%">
+          <div class="fullpage__content">
+            @include('partials/hero.html')
+          </div>
+        </div>
+        <div class="page__fullpage fullpage">
+          <div class="fullpage__content">
+            @include('partials/about.html')
+          </div>
+        </div>
+        <div class="page__fullpage fullpage">
+          <div class="fullpage__content">
+            @include('partials/reviews.html')
+          </div>
+        </div>
+        <div class="page__fullpage fullpage">
+          <div class="fullpage__content">
+            @include('partials/services.html')
+          </div>
+        </div>
+        <div class="page__fullpage fullpage">
+          <div class="fullpage__content">
+            @include('partials/portfolio.html')
+          </div>
+        </div>
+        <div class="page__fullpage fullpage">
+          <div class="fullpage__content">
+            @include('partials/contacts.html')
+          </div>
+        </div>
+      </div>
+
+      <div class="page__pagination"></div>
+      <div class="page__scroll"></div>
+    </main>
+
+    @include('partials/intro.html')
+
+  </div>
+
+</body>
+</html>
