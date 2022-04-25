@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   width: 100%;
-  background-color: rgba($black, 0.9);
+  background-color: rgba(var(--black), 0.9);
   z-index: 10;
 }
 
@@ -54,8 +54,8 @@
     left: 0;
     overflow: hidden;
     max-width: 0;
-    border-bottom: 3px solid $red;
-    color: $white;
+    border-bottom: 3px solid var(--red);
+    color: var(--white);
     transition: max-width 0.3s;
   }
 
@@ -91,15 +91,15 @@
   }
 
   &:focus {
-    color: $red;
+    color: var(--red);
   }
 
   &:hover {
-    color: $red;
+    color: var(--red);
   }
 
   &:active {
-    color: $red;
+    color: var(--red);
   }
 }
 

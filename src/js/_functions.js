@@ -190,3 +190,11 @@ function setScrollType() {
 }
 
 pageSlider.init();
+
+
+// Toggle theme
+const themeBtn = document.querySelector('.nav__theme');
+themeBtn.addEventListener('click', () => {
+  let el = document.body;
+  el.classList.toggle('light-mode');
+});

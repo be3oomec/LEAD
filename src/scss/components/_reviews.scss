@@ -27,7 +27,7 @@
   display: block;
   width: 100%;
   height: 100%;
-  fill: $white
+  fill: var(--white);
 }
 
 .reviews__list {

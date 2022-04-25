@@ -1,8 +1,12 @@
 // Colors
-$white: #fff;
-$black: #000;
-$black-900: #131313;
-$red: #FB1B3D;
+:root {
+  --white: #fff;
+  --black: #000;
+  --black-900: #131313;
+  --red: #FB1B3D;
+}
+
+
 // Fonts
 $montserrat: 'Montserrat', Arial, sans-serif;
 $potra: 'Potra', Arial, sans-serif;

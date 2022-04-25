@@ -16,7 +16,7 @@
 
 .tabs__nav-btn {
   background-color: transparent;
-  color: $white;
+  color: var(--white);
   padding: 10px 30px;
   font-weight: 500;
   font-size: 30px;
@@ -26,21 +26,23 @@
   transition: background 0.3s, color 0.3s;
 
   &--active {
-    background-color: #fff;
-    color: $black;
+    background-color: var(--white);
+    color: var(--black);
   }
 
   &:focus {
-    background-color: #fff;
-    color: $black;
+    background-color: var(--white);
+    color: var(--black);
   }
+
   &:hover {
-    background-color: #fff;
-    color: $black;
+    background-color: var(--white);
+    color: var(--black);
   }
+
   &:active {
-    background-color: #fff;
-    color: $black;
+    background-color: var(--white);
+    color: var(--black);
   }
 }
 
@@ -50,6 +52,25 @@
 
 .tabs__panel {
   position: relative;
+
+  transition: transform 0.3s, opacity 0.3s, visibility 0.3s;
+
+  animation-name: animTab;
+  animation-duration: 0.8s;
+
+  @keyframes animTab {
+    0% {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20%);
+    }
+
+    100% {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0%);
+    }
+  }
 }
 
 .tabs__img {
@@ -82,7 +103,7 @@
   line-height: 1.1;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: var(--white);
 }
 
 .tabs__descr {
@@ -90,5 +111,5 @@
   font-size: 16px;
   line-height: 1.7;
   letter-spacing: 0.105em;
-  color: #FFFFFF;
+  color: var(--white);
 }

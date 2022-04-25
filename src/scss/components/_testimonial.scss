@@ -4,7 +4,7 @@
   max-width: 490px;
   width: 100%;
 
-  border: 1px solid #FFFFFF;
+  border: 1px solid var(--white);
 
   padding: 60px;
 }
@@ -47,4 +47,4 @@
   text-transform: uppercase;
 }
 
-.testimonial__info {}
+// .testimonial__info {}

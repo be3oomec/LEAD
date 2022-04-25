@@ -30,7 +30,7 @@
   font-size: 20px;
   line-height: 1.1;
   letter-spacing: 0.105em;
-  background-color: $black;
+  background-color: var(--black);
   padding: 7px 20px;
   position: absolute;
   top: -17px;
@@ -41,9 +41,9 @@
   max-width: 600px;
   min-width: 600px;
   width: 100%;
-  border: 1px solid #FFFFFF;
+  border: 1px solid var(--white);
   padding: 25px 55px;
-  background-color: #131313;
+  background-color: var(--black-900);
   outline: none;
 
   &::placeholder {
@@ -65,7 +65,7 @@ textarea.form__input {
 }
 
 .form__button {
-  background-color: #FB1B3D;
+  background-color: var(--red);
 
   width: 250px;
   padding: 16px;
@@ -86,7 +86,7 @@ textarea.form__input {
   &:focus,
   &:hover,
   &:active {
-    border: 1px solid $red;
+    border: 1px solid var(--red);
     &::before {
       width: 100%;
     }
@@ -94,6 +94,7 @@ textarea.form__input {
 }
 
 .form__button span {
+  color: white;
   font-weight: 800;
   font-size: 20px;
   line-height: 1.1;

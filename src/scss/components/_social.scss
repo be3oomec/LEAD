@@ -7,7 +7,7 @@
   line-height: 1.1;
   letter-spacing: 0.105em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: var(--white);
   margin-bottom: 35px;
 }
 
@@ -33,6 +33,6 @@
 .social__icon {
   width: 44px;
   height: 44px;
-  fill: $white;
+  fill: var(--white);
   transition: all 0.3s;
 }
