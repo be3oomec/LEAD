@@ -3,7 +3,7 @@
   "version": "2.0.4",
   "description": "gulp-builder for weblayout",
   "main": "gulpfile.js",
-  "homepage": "https://be3oomec.github.io/suv",
+  "homepage": "https://be3oomec.github.io/lead",
   "scripts": {
     "html": "node-w3c-validator -f lint -evH -i app/**/*.html",
     "dev": "gulp",
