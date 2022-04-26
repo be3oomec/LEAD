@@ -193,7 +193,7 @@ pageSlider.init();
 
 
 // Toggle theme
-const themeBtn = document.querySelector('.nav__theme');
+const themeBtn = document.querySelector('.nav__theme-input');
 themeBtn.addEventListener('click', () => {
   let el = document.body;
   el.classList.toggle('light-mode');
